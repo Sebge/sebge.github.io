@@ -1,5 +1,9 @@
 ### Hi there 👋
 
+I'm a researcher at DFKI and PhD student at the University of Luebeck.
+My interests are in bridging the gap between eHealth data and AI. 
+I'm currently working in the [AI-CARE](https://ai-care-cancer.de/) project, where we aim to analyze cancer registry data using machine learning models.
+
 <!--
 **Sebge/sebge** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
