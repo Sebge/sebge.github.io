@@ -11,14 +11,7 @@ I'm a researcher at [DFKI](https://www.dfki.de/) and a PhD student at the [Unive
 My interests are in bridging the gap between eHealth data and AI.
 I'm currently working in the [AI-CARE](https://ai-care-cancer.de/) project, where we aim to analyze cancer registry data using machine learning models.
 
----
 
-## Research Interests
-
-- Medical informatics and eHealth data analysis
-- Machine learning for clinical and registry data
-- Natural language processing in biomedicine
-- Cancer informatics
 
 ---
 
