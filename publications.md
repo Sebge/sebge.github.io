@@ -9,12 +9,16 @@ Publications are managed in a [BibLaTeX file]({{ "/bibliography/references.bib" 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
 <bibtex src="{{ "/bibliography/references.bib" | relative_url }}"></bibtex>
-
+<div class="bibtex_structure">
+  <div class="group year" extra="DESC number">
+        <div class="templates"></div>
+  </div>
+</div>
 <div class="bibtex_template">
   <div class="bibtex_entry" style="margin-bottom:1.25em; padding-bottom:1em; border-bottom:1px solid #eee;">
-    <span class="if article"><strong>[<span class="bibtex_year"></span>]</strong></span>
-    <span class="if inproceedings"><strong>[<span class="bibtex_year"></span>]</strong></span>
-    <span class="if !article !inproceedings"><strong>[<span class="bibtex_year"></span>]</strong></span>
+    <!--<span class="if article"><strong>[<span class="year"></span>]</strong></span>
+    <span class="if inproceedings"><strong>[<span class="year"></span>]</strong></span>
+    <span class="if !article !inproceedings"><strong>[<span class="year"></span>]</strong></span>-->
     <span class="title" style="font-weight:bold;"></span><br/>
     <span class="author"></span><br/>
     <span class="if journal"><em><span class="journal"></span></em><span class="if volume">, vol. <span class="volume"></span></span><span class="if pages">, pp. <span class="pages"></span></span></span>
@@ -33,9 +37,9 @@ Publications are managed in a [BibLaTeX file]({{ "/bibliography/references.bib" 
 window.addEventListener('load', function () {
   document.querySelectorAll('#bibtex_display a.doi').forEach(function (a) {
     var doi = a.textContent.trim();
-    if (doi && !/^https?:\/\//.test(a.href)) {
-      a.href = 'https://doi.org/' + doi;
-    }
+    //if (doi && !/^https?:\/\//.test(a.href)) {
+    a.href = 'https://doi.org/' + doi;
+    //}
   });
 });
 </script>
