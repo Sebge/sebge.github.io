@@ -2,23 +2,101 @@
 % Add your publications below using BibLaTeX/BibTeX format.
 % Supported entry types: @article, @inproceedings, @book, @incollection, @misc, @phdthesis, @mastersthesis, @techreport, @preprint
 
-@article{example2024,
-  author    = {Germer, Sebastian and Doe, Jane and Smith, John},
-  title     = {Machine Learning Approaches for Cancer Registry Data Analysis},
-  journal   = {Journal of Biomedical Informatics},
-  year      = {2024},
-  volume    = {150},
-  pages     = {104580},
-  doi       = {10.1016/j.jbi.2024.104580},
-  abstract  = {This paper presents machine learning methods applied to population-based cancer registry data to support oncological care.}
+@article {1741,
+	title = {Lung Cancer Survival Estimation Using Data from Seven German Cancer Registries.},
+	journal = {Studies in health technology and informatics},
+	volume = {327},
+	year = {2025},
+	month = {2025 May 15},
+	pages = {457-461},
+	abstract = {Predicting the survival of cancer patients is of high importance for the medical community, e.g. for evaluating therapy strategies. This study is based on lung cancer data retrieved from seven German cancer registries according to the German basic oncology dataset. After data integration and preprocessing, we predicted the survival for 6, 12, 18 and 24 months respectively using a gradient boosting algorithm. To gain insight into the decision process of the models, we identified the features that have a high impact on patient survival using permutation feature importance scores as explainability metric. They show that age at diagnosis as well as the presence of distant metastases are key factors for long-term survival. The found factors can be used in a next step for multi-variate survival analysis.},
+	keywords = {Aged, Algorithms, Female, Germany, Humans, Lung Neoplasms, Male, Middle Aged, Registries, Survival analysis, Survival Rate},
+	issn = {1879-8365},
+	doi = {10.3233/SHTI250379},
+	author = {Germer, Sebastian and Rudolph, Christiane and Katalinic, Alexander and Rath, Natalie and Rausch, Katharina and Heinz Handels}
 }
 
-@inproceedings{example2023,
-  author    = {Germer, Sebastian and Smith, John},
-  title     = {Bridging eHealth Data and AI: Challenges and Opportunities},
-  booktitle = {Proceedings of the International Conference on Artificial Intelligence in Medicine (AIME)},
-  year      = {2023},
-  pages     = {123--132},
-  doi       = {10.1007/example.2023},
-  abstract  = {We discuss the challenges and opportunities of applying AI methods to heterogeneous eHealth data sources.}
+@inbook {hubner_evaluating_2025,
+	title = {Evaluating Imputation Techniques for Survival Data Utilizing Kaplan-Meier Curves},
+	booktitle = {Studies in Health Technology and Informatics},
+	year = {2025},
+	publisher = {IOS Press},
+	organization = {IOS Press},
+	abstract = {Cancer registries collect data about cancer patients, such as information about the tumor histology and progress, but tend to be incomplete in some variables, which complicates further analysis like survival probabilities. Imputation can benefit these analyses. Most imputation methods aim to learn the underlying data distribution of the available data, but often only feature-wise errors are evaluated. In this paper a new approach to evaluate the learned data distribution in case of survival analysis for two state-of-the-art imputation methods is presented. To estimate the survival probability after a cancer diagnosis Kaplan-Meier (KM) curves are used and calculated for survival cohorts. Stratifying the data using the UICC tumor stadium, we aim to evaluate the imputation quality using the comparison of the survival time probability. Two KM curves are calculated for each UICC-stage, while one curve is based on the survival time of the known UICC-stage and the other is computed for the survival times of the imputed UICC-stages. Differences in KM curves will be tested with a log-rank test, a modified Manhattan-Distance and the maximum absolute distance. The best result for all evaluation metrics is achieved for the UICC-stage II, which was imputed with the imputer Miss Forest and aligns well with the qualitative result of the plotted KM curves. Especially for the survival analysis the proposed metrics can help epidemiological researchers to choose an imputation method, which can preserve the trend of the survival probabilities.},
+	isbn = {978-1-64368-629-5},
+	doi = {10.3233/SHTI251487},
+	url = {https://ebooks.iospress.nl/doi/10.3233/SHTI251487},
+	author = {Wiegers, Nina Cassandra and Germer, Sebastian and Rudolph, Christiane and Rath, Natalie and Rausch, Katharina and Katalinic, Alexander and Heinz Handels},
+	editor = {H{\"u}bner, Ursula H. and Liebe, Jan-David and Benis, Arriel and Egbert, Nicole and Engelsma, Thomas and Gallos, Parisis and Flemming, Daniel and Lichtner, Valentina and Marcilly, Romaric and Tamburis, Oscar and Villumsen, Sidsel}
+}
+@article {1673,
+	title = {KI-basierte Analyse von Krebsregisterdaten},
+	journal = {Forum},
+	year = {2024},
+	abstract = {In Krebsregistern werden systematisch Daten zum Auftreten, zur Behandlung und zum Verlauf der Krebserkrankungen gesammelt, um die Versorgung von an Krebs Erkrankten weiter zu verbessern. In dem vom Bundesministerium f{\"u}r Gesundheit gef{\"o}rderten Verbundprojekt AI-CARE, an dem Krebsregister aus 8~Bundesl{\"a}ndern beteiligt sind, werden Methoden der k{\"u}nstlichen Intelligenz (KI) zur Analyse von Krebsregisterdaten entwickelt und mit statistischen Verfahren verglichen. Besonderes Augenmerk des Deutschen Forschungszentrums f{\"u}r K{\"u}nstliche Intelligenz (DFKI) in L{\"u}beck liegt dabei auf der {\"U}berlebenszeitanalyse nach Krebsdiagnose. In einem ersten Experiment wurde ein Datensatz des Krebsregisters Schleswig-Holstein dazu genutzt, verschiedene Modelle zur {\"U}berlebenszeitanalyse von an Lungenkrebs Erkrankten zu vergleichen und mit Erkl{\"a}rbarkeitsmethoden der KI die wichtigsten {\"U}berlebensfaktoren zu ermitteln. Die entwickelten KI-Modelle und die eingesetzten statistischen Methoden liefern interessante Ergebnisse zur Risikoeinsch{\"a}tzung von Erkrankten mit der Diagnose Lungenkrebs. Durch die bei den KI-Modellen eingesetzten Erkl{\"a}rbarkeitsmethoden konnten die Ergebnisse klinischer Studien hinsichtlich der {\"U}berlebensfaktoren best{\"a}tigt werden.},
+	issn = {2190-9784},
+	doi = {10.1007/s12312-024-01336-7},
+	author = {Germer, Sebastian and Rudolph, Christiane and Katalinic, Alexander and Rath, Natalie and Rausch, Katharina and Heinz Handels}
+}
+
+@article {GERMER2024105607,
+	title = {Survival analysis for lung cancer patients: A comparison of Cox regression and machine learning models},
+	journal = {International Journal of Medical Informatics},
+	volume = {191},
+	year = {2024},
+	pages = {105607},
+	keywords = {Data science, Epidemiology, Explainable AI, Lung cancer, Survival analysis},
+	issn = {1386-5056},
+	doi = {10.1016/j.ijmedinf.2024.105607},
+	url = {https://www.sciencedirect.com/science/article/pii/S1386505624002703},
+	author = {Germer, Sebastian and Rudolph, Christiane and Louisa Labohm and Katalinic, Alexander and Rath, Natalie and Rausch, Katharina and Bernd Holleczek and Heinz Handels}
+}
+@inproceedings {1686,
+	title = {K{\"u}nstliche Intelligenz (KI) in der Krebsregistrierung: Methoden, Herausforderungen und erste Ergebnisse des AI-Care-Datensatzes},
+	booktitle = {Gesundheit {\textendash} gemeinsam. Kooperationstagung der Deutschen Gesellschaft f{\"u}r Medizinische Informatik, Biometrie und Epidemiologie (GMDS), (DGSMP), (DGEpi), (DGMS), (DGPH)},
+	year = {2024},
+	address = {Dresden},
+	doi = {10.3205/24gmds742},
+	author = {Rudolph, Christiane and Germer, Sebastian and Alice Nennecke and Henrik Kusche and Louisa Labohm and Rath, Natalie and Rausch, Katharina and Bernd Holleczek and Heinz Handels and Katalinic, Alexander}
+}
+@inproceedings {1147,
+	title = {A Comparison of Imputation Techniques to Improve Lung Cancer Survival Estimation},
+	booktitle = {Student Conference Proceedings 2024},
+	year = {2024},
+	pages = {231-234},
+	publisher = {Infinite Science Publishing},
+	organization = {Infinite Science Publishing},
+	address = {L{\"u}beck},
+	isbn = {978-3-945954-73-7},
+	author = {Wiegers, Nina Cassandra and Germer, Sebastian and Rudolph, Christiane and Rausch, Katharina and Rath, Natalie and Heinz Handels},
+	editor = {Buzug, Thorsten M. and Heinz Handels and H{\"u}bner, Christian and Mertins, Alfred and Stefan M{\"u}ller and Rostalski, Philipp and Bunzeck, Nico}
+}
+@inproceedings {1516,
+	title = {A Comparison of Feature Extraction Models for Medical Image Captioning},
+	booktitle = {67. Jahrestagung der Deutschen Gesellschaft f{\"u}r Medizinische Informatik, Biometrie und Epidemiologie e. V. (GMDS), 13. Jahreskongress der Technologie- und Methodenplattform f{\"u}r die vernetzte medizinische Forschung e.V. (TMF)},
+	year = {2022},
+	address = {Kiel},
+	doi = {10.3205/22gmds036},
+	author = {Germer, Sebastian and Uzunova, Hristina and Jan Ehrhardt and Feldhus, Nils and Thomas, Phlippe and Heinz Handels}
+}
+@inproceedings {1147,
+	title = {Visualization and Exploration of Integrated Patient Data},
+	booktitle = {Student Conference Proceedings 2021: Medical Engineering Science, Medical Informatics, Biomedical Engineering, Auditory Technology, Biophysics and Robotics and Autonomous Systems},
+	year = {2021},
+	pages = {359-362},
+	publisher = {Infinite Science Publishing},
+	organization = {Infinite Science Publishing},
+	address = {L{\"u}beck},
+	isbn = {978-3-945954-65-2},
+	author = {Germer, Sebastian and Lambarki, Mohamed and Ulrich, Hannes and Ingenerf, Josef and Lablans, Martin},
+	editor = {Buzug, Thorsten M. and Heinz Handels and H{\"u}bner, Christian and Klein, Stephan and Mertins, Alfred and Rostalski, Philipp}
+}
+@article {1258,
+	title = {A Smart Mapping Editor for Standardised Data Transformation},
+	journal = {Studies in Health Technology and Informatics},
+	volume = {270},
+	year = {2020},
+	pages = {1185-1186},
+	doi = {10.3233/SHTI200354},
+	author = {Ulrich, Hannes and Germer, Sebastian and Kock-Schoppenhauer, Ann-Kristin and Kern, Jori and Lablans, Martin and Ingenerf, Josef}
 }

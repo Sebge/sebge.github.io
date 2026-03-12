@@ -5,7 +5,7 @@ title: Publications
 
 ## Publications
 
-Publications are managed in a [BibLaTeX file]({{ "/bibliography/references.bib" | relative_url }}) in the repository. Add or update entries there in standard BibTeX/BibLaTeX format.
+All Publications can be found in the [BibLaTeX file]({{ "/bibliography/references.bib" | relative_url }})
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
 <bibtex src="{{ "/bibliography/references.bib" | relative_url }}"></bibtex>
@@ -24,7 +24,7 @@ Publications are managed in a [BibLaTeX file]({{ "/bibliography/references.bib" 
     <span class="if journal"><em><span class="journal"></span></em><span class="if volume">, vol. <span class="volume"></span></span><span class="if pages">, pp. <span class="pages"></span></span></span>
     <span class="if booktitle"><em><span class="booktitle"></span></em><span class="if pages">, pp. <span class="pages"></span></span></span>,
     <span class="year"></span>.
-    <span class="if doi"> [<a class="doi" target="_blank" rel="noopener noreferrer">DOI</a>]</span>
+    <span class="if doi"> DOI: https://doi.org/<span class="doi"></span></span>
     <div class="if abstract" style="margin-top:0.4em; font-size:0.92em; color:#555;">
       <em>Abstract:</em> <span class="abstract"></span>
     </div>
@@ -33,18 +33,10 @@ Publications are managed in a [BibLaTeX file]({{ "/bibliography/references.bib" 
 
 <div id="bibtex_display" class="bibtex_display"></div>
 
-<script>
-window.addEventListener('load', function () {
-  document.querySelectorAll('#bibtex_display a.doi').forEach(function (a) {
-    var doi = a.textContent.trim();
-    //if (doi && !/^https?:\/\//.test(a.href)) {
-    a.href = 'https://doi.org/' + doi;
-    //}
-  });
-});
-</script>
+
 
 <noscript>
   <p><em>JavaScript is required to render the publication list. You can view the raw BibTeX file <a href="{{ "/bibliography/references.bib" | relative_url }}">here</a>.</em></p>
 </noscript>
 
+Bibtex Support by [bibtex-js](https://github.com/pcooksey/bibtex-js)
