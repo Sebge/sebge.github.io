@@ -28,6 +28,11 @@
   <body>
     <div class="wrapper">
       <header>
+        <picture style="width:100%; height: 523px">
+          <source srcset="/imgs/portrait.webp" type="image/webp">
+          <img src="/imgs/portrait.png" style="width:100%;width: 100%;" loading="eager">
+        </picture>
+        
         <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
         {% if site.description %}
         <p>{{ site.description }}</p>
