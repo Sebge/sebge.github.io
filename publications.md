@@ -24,7 +24,11 @@ All Publications can be found in the [BibLaTeX file]({{ "/bibliography/reference
     <span class="if journal"><em><span class="journal"></span></em><span class="if volume">, vol. <span class="volume"></span></span><span class="if pages">, pp. <span class="pages"></span></span></span>
     <span class="if booktitle"><em><span class="booktitle"></span></em><span class="if pages">, pp. <span class="pages"></span></span></span>,
     <span class="year"></span>.
-    <span class="if doi"> DOI: https://doi.org/<span class="doi"></span></span>
+    <div class="if doi">
+      <a class="bibtexVar" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/+DOI+" extra="doi">
+        https://dx.doi.org/<span class="doi"></span>
+      </a>
+    </div>
     <div class="if abstract" style="margin-top:0.4em; font-size:0.92em; color:#555;">
       <em>Abstract:</em> <span class="abstract"></span>
     </div>
